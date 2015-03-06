@@ -27,7 +27,7 @@
     <tbody>
       {{#each email in model}}
       <tr>
-        <td> {{#link-to 'email' email}}{{email.sender}}{{/link-to}} </td>
+        <td> {{#link-to 'email' email.id }}{{email.sender}}{{/link-to}} </td>
         <td> {{email.subject}} </td>
         <td> {{email.date}} </td>
       </tr>
