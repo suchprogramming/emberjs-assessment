@@ -1,0 +1,10 @@
+.inline-item{
+  display: inline;
+}
+
+.inline-item-button{
+  float: right;
+}
+.nav > li > a{
+  padding-left: 0px;
+}
