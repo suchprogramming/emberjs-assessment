@@ -8,3 +8,6 @@
 .nav > li > a{
   padding-left: 0px;
 }
+.blank{
+  list-style-type: none;
+}
