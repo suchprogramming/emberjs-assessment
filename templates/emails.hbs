@@ -1,0 +1,22 @@
+<h1>Your MailBox</h1>
+
+{{#link-to 'new-email' classNames="btn btn-primary"}}Create Email{{/link-to}}
+
+<table class="table table-condensed">
+  <thead>
+    <tr>
+      <th>From</th>
+      <th>Subject</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each email in model}}
+    <tr>
+      <td> {{#link-to 'email' email}}{{email.sender}}{{/link-to}} </td>
+      <td> {{email.subject}} </td>
+      <td> {{email.date}} </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
